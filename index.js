@@ -11,10 +11,17 @@ app.get("/", function(req, res) {
   res.render("index");
 });
 
+app.get("/routePlanner", function(req, res) {
+  res.render("routePlanner");
+});
 
+app.get("/routeTijden", function(req, res) {
+  res.render("routeTijden");
+});
 
-
-
+app.get("/routeDetail", function(req, res) {
+  res.render("routeDetail");
+});
 
 
 // de server starten op poort 3000

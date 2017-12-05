@@ -1,0 +1,30 @@
+<% include header %>
+<% include achtergrond %>
+<% include navigatie %>
+
+<h1> Plan Route </h1>
+
+<form class="route">
+  <div class="van">
+    <label class="bestemming" for="van">Van</label>
+    <input type="text" name="van" value="Adres, halte, station, ...">
+  </div>
+  <div class="naar">
+    <label class="bestemming" for="naar">Naar</label>
+    <input type="text" name="naar" value="Adres, halte, station, ...">
+  </div>
+  <div class="wanneer">
+    <label class="datum"for="date">Datum Vertrek</label>
+    <input type="date" name="datum" value="">
+    <label class="datum" for="time">Uur Vertrek</label>
+    <input type="time" name="datum" value="">
+  </div>
+  </form>
+
+  <a href="/routeTijden"><input type="submit" value="Plan Route"></a>
+
+
+
+
+
+<% include footer %>
