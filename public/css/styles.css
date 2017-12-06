@@ -1,0 +1,64 @@
+.ticket-achtergrond{
+  height: 400px;
+  width: 300px;
+  background-color: rgba(255,255,255,0.5);
+  margin: auto;
+  margin-top: 60px;
+  border-bottom: 4px solid yellow;
+  border-radius: 3px;
+}
+.ticket-tekst1{
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  padding: 50px;
+}
+.min{
+  font-size: 5em;
+  color: white;
+  position: relative;
+  left: 50px;
+}
+.één{
+    font-size: 4em;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: -60px;
+    left: 135px;
+  }
+.plus{
+  font-size: 5em;
+  color:white;
+  font-weight: bold;
+  position: relative;
+  top: -135px;
+  left: 220px;
+}
+.ticket-tekst2{
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -100px;
+}
+.ticket-tekst3{
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+.ticket-button{
+    background-color: rgba(255,255,200,0.3);
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 2px solid yellow;
+    border-radius: 3px;
+    padding: 15px 32px;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: inline-block;
+}
