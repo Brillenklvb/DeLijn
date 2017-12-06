@@ -1,0 +1,89 @@
+
+.settings{
+  height: auto;
+  background: rgba(255, 255, 255, 0.5);
+  width: 80%;
+  margin: auto;
+}
+#leadButton{
+  min-height: 50px;
+  width: 100%;
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  color: white;
+  background: linear-gradient(to bottom,rgba(127,127,127,0.15) ,rgba(127,127,127,0.4) 100%);
+  font-size: 14px;
+  text-transform:uppercase;
+}
+#leadButton:hover{
+  background: linear-gradient(to bottom,rgba(127,127,127,0.4) ,rgba(127,127,127,0.55) 100%);
+}
+.settings-part{
+  width: 80%;
+}
+section{
+  box-sizing: border-box;
+  width: 100%;
+}
+.settings-choose{
+  background: none;
+  font-size: 12px;
+  float: left;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 3px solid rgb(240, 239, 53);
+  outline: none;
+  color: white;
+  opacity: 80%;
+  text-align: left;
+}
+.settings-choose:active{
+  color: rgb(240, 239, 53);
+  border: none;
+  border-bottom: 3px solid rgb(240, 239, 53);
+  outline: none;
+}
+.settings-choose::placeholder{
+  color: white;
+  border: none;
+  outline: none;
+}
+.settings-save, .settings-login{
+  margin: 20px 0 20px 0;
+  color: white;
+  font-size: 13px;
+  border: none;
+  outline: none;
+  float: right;
+  width: 50%;
+  padding: 10px;
+  margin-right: 0;
+  background: rgba(240, 239, 53, 0.2);
+  border-bottom: 3px solid rgb(240, 239, 53);
+  border-radius: 4px;
+}
+.settings-addroute{
+  color: white;
+  font-size: 14px;
+  font-style: italic;
+}
+.settings-sub{
+  width: 80%;
+  margin: 20px 10%;
+}
+.setting-closed{
+  transition: 0.5s ease;
+  max-height: 0px;
+  overflow: hidden;
+}
+.setting-open{
+  transition: 0.5s ease;
+  max-height: 500px;
+  overflow: hidden;
+}
+span{
+  font-size: 20px;
+}
