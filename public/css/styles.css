@@ -47,7 +47,7 @@ h1{
   background-color: rgb(252,220,4);
 }
 
-.route{
+.routeP{
   position: absolute;
   top: 200px;
   width: 275px;
@@ -57,14 +57,14 @@ h1{
   margin-right: auto;
 }
 
-label{
+.routeLabel{
   position: absolute
   color: black;
   margin-right: 5px;
   font-size: 1.1em;
 }
 
-.van, .naar{
+.routeP .van, .naar{
   background: white;
   padding: 14px 30px;
   font-size: 1.1em;
@@ -72,11 +72,11 @@ label{
   border-radius: 3px;
 }
 
-.bestemming{
+.routeP .bestemming{
   margin-left: -10px;
 }
 
-.datum{
+.routeP .datum{
   font-size: 1.1em;
   color: white;
   display: inline-block;
@@ -86,11 +86,11 @@ label{
   padding: 15px 0px;
 }
 
-.wanneer{
+.routeP .wanneer{
   position: relative;
 }
 
-input[type="date"]{
+.routeP input[type="date"]{
   display: inline-block;
   position: absolute;
   right: 0;
@@ -105,7 +105,7 @@ input[type="date"]{
   width: 100px;
 }
 
-input[type="time"]{
+.routeP input[type="time"]{
   display: inline-block;
   position: absolute;
   top:60px;
@@ -122,7 +122,7 @@ input[type="time"]{
 }
 
 
-input[type="text"]{
+.routeP input[type="text"]{
   position: absolute;
   right: 30px;
   vertical-align: center;
@@ -136,7 +136,7 @@ input[type="text"]{
 }
 
 
-input[type="submit"]{
+.routePlannen{
   position: absolute;
   left: 0;
   right: 0;
@@ -161,7 +161,7 @@ input[type="submit"]{
   width: 180px;
 }
 
-.rT{
+.routeT{
   position: absolute;
   top: 200px;
   left: 0;
@@ -172,7 +172,7 @@ input[type="submit"]{
   text-align: center;
 }
 
-.vroegere, .latere{
+.routeT .vroegere, .latere{
   border-bottom: 3px solid rgb(240,239,53);
   background: rgba(240,239,53,0.2);
   padding: 12px 30px;
@@ -188,7 +188,7 @@ input[type="submit"]{
   padding: 14px 30px;
 }
 
-.tijdD{
+.routeD .tijdD{
   color: rgba(255, 255, 255, 0.4);
   width: auto;
   border-bottom: 3px solid white;
@@ -200,7 +200,7 @@ input[type="submit"]{
   display: inline-block;
 }
 
-.rD{
+.routeD{
   position: absolute;
   top: 200px;
   left: 0;
@@ -211,20 +211,20 @@ input[type="submit"]{
   text-align: center;
 }
 
-.tijden{
+.routeD .tijden{
   font-size: 1.2em;
   color: white;
   display: inline;
   margin-right: 30px;
 }
 
-.nr{
+.routeD .nr{
   margin-right: 10px;
   margin-left: 65px;
-  width: 30px;
+  width: 25px;
 }
 
-.lijnnr{
+.routeD .lijnnr{
   color: rgba(255, 255, 255, 0.4);
   font-size: 1.2em;
   margin-bottom: 20px;
