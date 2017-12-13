@@ -17,35 +17,39 @@ app.get('/home', function(req, res) {
 });
 
 app.get('/aanmelden', function(req, res) {
-    res.render("home", {});
+    res.render("aanmelden", {});
 });
 
 app.get('/registreren', function(req, res) {
-    res.render("home", {});
+    res.render("registreren", {});
 });
 
 app.get('/halte', function(req, res) {
-    res.render("home", {});
+    res.render("halte", {});
+});
+
+app.get('/halteLijst', function(req, res) {
+    res.render("halteLijst", {});
 });
 
 app.get('/instellingen', function(req, res) {
-    res.render("home", {});
+    res.render("instellingen", {});
 });
 
 app.get('/routeDetail', function(req, res) {
-    res.render("home", {});
+    res.render("routeDetail", {});
 });
 
 app.get('/routePlanner', function(req, res) {
-    res.render("home", {});
+    res.render("routePlanner", {});
 });
 
 app.get('/routeTijden', function(req, res) {
-    res.render("home", {});
+    res.render("routeTijden", {});
 });
 
 app.get('/ticket', function(req, res) {
-    res.render("home", {});
+    res.render("ticket", {});
 });
 
 
