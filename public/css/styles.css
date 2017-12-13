@@ -420,6 +420,19 @@ a{
   display: inline-block;
   margin-right: 10px;
   margin-bottom: -10px;
+  padding: 20px 0;
+}
+
+.halte-kader input[type="tel"]{
+  display: none;
+}
+
+.halte-kader input[type="text"]{
+  background-color:  rgba(220,220,220,0.2);
+  display: none;
+  border-radius: 3px;
+  border: none;
+  border-bottom: 3px solid white;
 }
 
 .halte-kader{
@@ -431,6 +444,7 @@ a{
   border-radius: 3px;
   border: none;
   border-bottom: 3px solid white;
+  overflow: -webkit-paged-x;
 }
 
 .halte-vinden{
@@ -567,30 +581,20 @@ span{
   text-align: center;
   padding: 50px;
 }
-.min{
+.knoppen{
+  display: flex;
+  justify-content: space-around;
+}
+.knop{
   font-size: 5em;
   color: white;
-
-}
-.één{
-    font-size: 4em;
-    color: white;
-    font-weight: bold;
-    position: relative;
-
-  }
-.plus{
-  font-size: 5em;
-  color:white;
-  font-weight: bold;
-  position: relative;
-
 }
 .ticket-tekst2{
   color: white;
   font-size: 1em;
   font-weight: bold;
   text-align: center;
+  margin-top: 40px;
 }
 .ticket-tekst3{
   color: white;
