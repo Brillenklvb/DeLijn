@@ -7,7 +7,6 @@ app.set("view engine", "ejs");
 
 app.use(express.static('public'))
 
-// Dit is de route naar de home.
 app.get('/', function(req, res) {
   res.render("index", {});
 });
@@ -53,6 +52,4 @@ app.get('/ticket', function(req, res) {
 });
 
 
-
-// de server starten op poort 3000
 app.listen(3000);

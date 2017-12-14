@@ -1,7 +1,7 @@
 body{
   position: relative;
   font-family: "Roboto";
-  font-size: 14px;
+  font-size: 16px;
   line-height: 17px;
   background-image: url("/img/background.jpg");
   background-position: center center fixed;
@@ -40,16 +40,22 @@ h1{
   position: fixed;
   bottom:0px;
   width: 100%;
-  height:10px;
+  height:5px;
   background-color: rgb(252,220,4);
 }
 
-/*AANMELDEN*/
+input::-webkit-input-placeholder {
+  color: white !important;
+}
+
+input{
+  font-size: 0.9em;
+  color: white;
+}
+
+/*AANMELDEN VIEW*/
 
 .aanmelden-titel{
-  color: white;
-  text-align: center;
-  font-size: 2em;
   margin-top: 40px;
 }
 
@@ -61,7 +67,7 @@ h1{
   color: white;
   text-decoration: none;
   display: inline-block;
-  margin: 0 -90px 0 0;
+  margin: 0 -100px 0 0;
 }
 
 .aanmelden{
@@ -87,8 +93,6 @@ h1{
 }
 
 .registreren-titel{
-  color: white;
-  text-align: center;
   margin-top: 10px;
 }
 
@@ -104,7 +108,6 @@ h1{
 
 input[type="text"], input[type="password"], input[type="email"]{
   background-color:  rgba(220,220,220,0.2);
-  color: white;
   padding: 20px;
   margin:0 0 10px 0;
   width: 210px;
@@ -119,9 +122,10 @@ a{
 }
 
 a .aanmelden-vergeten{
-  color: grey;
   display: block;
-  margin: 5px -107px 15px 0;
+  width: 250px;
+  text-align: right;
+  margin: 3px auto 10px;
 }
 
 .opstartscherm-aanmelden, .opstartscherm-registreren{
@@ -133,16 +137,19 @@ a .aanmelden-vergeten{
   text-decoration: none;
   display: inline-block;
 }
+
 .opstartscherm{
   margin: 190px auto 0;
   width: 211px;
   position: relative;
   z-index: 1000;
 }
+
 .opstartscherm-logo{
   display: block;
   margin: 0 auto 20px;
 }
+
 .opstartscherm-aanmelden{
   margin-bottom: 20px;
 }
@@ -205,7 +212,7 @@ a .aanmelden-vergeten{
   text-align: center;
   margin-top: 20px;
   text-transform: uppercase;
-  letter-spacing: 1pt;
+  letter-spacing: 0.6pt;
   font-size: 0.9em;
 }
 
@@ -312,6 +319,7 @@ a .aanmelden-vergeten{
   background: rgba(240,239,53,0.2);
   border: none;
   border-bottom: 3px solid rgb(240,239,53);
+  border-radius: 3px;
   width: 275px;
 }
 
@@ -338,6 +346,7 @@ a .aanmelden-vergeten{
   border-bottom: 3px solid rgb(240,239,53);
   background: rgba(240,239,53,0.2);
   padding: 12px 30px;
+  border-radius: 3px;
 }
 
 .tijd{
@@ -397,7 +406,7 @@ a{
   text-decoration: none;
 }
 
-/*HALTE*/
+/*HALTE VIEW*/
 .halte{
   position: absolute;
   top: 240px;
@@ -410,8 +419,6 @@ a{
 }
 
 .halte-titel{
-  color: white;
-  text-align: center;
   margin-top: 50px;
 }
 
@@ -458,7 +465,7 @@ a{
   margin: 0 -125px 0 0;
 }
 
-/*SETTINGS*/
+/*SETTINGS VIEW*/
 
 .settings{
   height: auto;
@@ -472,11 +479,13 @@ a{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  border-radius: 4px;
 }
+
 #leadButton{
   min-height: 50px;
   width: 100%;
-  padding: 10px 30px;
+  padding: 20px 30px;
   border: none;
   outline: none;
   color: white;
@@ -484,16 +493,20 @@ a{
   font-size: 14px;
   text-transform:uppercase;
 }
+
 #leadButton:hover{
   background: linear-gradient(to bottom,rgba(127,127,127,0.4) ,rgba(127,127,127,0.55) 100%);
 }
+
 .settings-part{
   width: 80%;
 }
+
 .settings section{
   box-sizing: border-box;
   width: 100%;
 }
+
 .settings-choose{
   background: none;
   font-size: 12px;
@@ -508,17 +521,20 @@ a{
   opacity: 80%;
   text-align: left;
 }
+
 .settings-choose:active{
   color: rgb(240, 239, 53);
   border: none;
   border-bottom: 2px solid rgb(240, 239, 53);
   outline: none;
 }
+
 .settings-choose::placeholder{
   color: white;
   border: none;
   outline: none;
 }
+
 .settings-save, .settings-login{
   margin: 20px 0 20px 0;
   color: white;
@@ -533,30 +549,35 @@ a{
   border-bottom: 3px solid rgb(240, 239, 53);
   border-radius: 4px;
 }
+
 .settings-addroute{
   color: white;
   font-size: 14px;
   font-style: italic;
 }
+
 .settings-sub{
   width: 80%;
   margin: 20px 10%;
 }
+
 .setting-closed{
   transition: 0.5s ease;
   max-height: 0px;
   overflow: hidden;
 }
+
 .setting-open{
   transition: 0.5s ease;
   max-height: 500px;
   overflow: hidden;
 }
+
 span{
   font-size: 20px;
 }
 
-/*TICKET*/
+/*TICKET VIEW*/
 
 .ticket{
   position: absolute;
@@ -567,6 +588,7 @@ span{
   margin-right: auto;
   text-align: center;
 }
+
 .ticket-achtergrond{
   width: 300px;
   background-color: rgba(255,255,255,0.2);
@@ -574,43 +596,50 @@ span{
   border-bottom: 4px solid yellow;
   border-radius: 3px;
 }
-.ticket-tekst1{
+
+.ticket-info{
   color: white;
   font-size: 1em;
   font-weight: bold;
   text-align: center;
   padding: 50px;
 }
+
 .knoppen{
   display: flex;
   justify-content: space-around;
 }
+
 .knop{
   font-size: 5em;
   color: white;
 }
-.ticket-tekst2{
+
+.ticket-kosten{
   color: white;
   font-size: 1em;
   font-weight: bold;
   text-align: center;
   margin-top: 40px;
 }
-.ticket-tekst3{
+
+.ticket-prijs{
   color: white;
-  font-size: 1em;
+  font-size: 1.8em;
   font-weight: bold;
   text-align: center;
+  margin: 20px 0 0 0;
 }
-.ticket-button{
-    background-color: rgba(252,220,4,0.3);
-    font-size: 1em;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    border-bottom: 3px solid yellow;
-    border-radius: 3px;
-    padding: 15px 32px;
-    margin: 30px 0;
-    display: inline-block;
+
+.ticket-btn{
+  background-color: rgba(252,220,4,0.3);
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 3px solid yellow;
+  border-radius: 3px;
+  padding: 15px 32px;
+  margin: 30px 0 40px;
+  display: inline-block;
 }
