@@ -1,54 +1,69 @@
-var express = require("express");
-var path = require("path");
-request = require('request-json');
-var app = express();
-app.set("views", path.resolve(__dirname, "views"));
-app.set("view engine", "ejs");
+const express = require('express');
+const request = require('request');
+const app = express();
 
-app.use(express.static('public'))
+const bodyParser = require('body-parser');
 
-// Dit is de route naar de home.
+const halte = require('./halte');
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(__dirname + '/public'));
+app.use('/static', express.static('./node_modules/font-awesome'));
+
+// set the view engine to ejs
+app.set('view engine', 'ejs')
+
 app.get('/', function(req, res) {
-  res.render("index", {});
-});
+  console.log(req.query)
+  if(req.query.halte_id && req.query.num_results){
+    // /?halte_id=200144&num_results=5
+    halten(req, res)
+  }
+  else{
+    //Geen QueryParams => Lege startpagina
+    res.render('index', {
+    })
+  }
+})
 
 app.get('/home', function(req, res) {
     res.render("home", {});
 });
 
 app.get('/aanmelden', function(req, res) {
-    res.render("home", {});
+    res.render("aanmelden", {});
 });
 
 app.get('/registreren', function(req, res) {
-    res.render("home", {});
+    res.render("registreren", {});
 });
 
 app.get('/halte', function(req, res) {
-    res.render("home", {});
+    halte(req,res)
 });
 
 app.get('/instellingen', function(req, res) {
-    res.render("home", {});
+    res.render("instellingen", {});
 });
 
 app.get('/routeDetail', function(req, res) {
-    res.render("home", {});
+    res.render("routeDetail", {});
 });
 
 app.get('/routePlanner', function(req, res) {
-    res.render("home", {});
+    res.render("routePlanner", {});
 });
 
 app.get('/routeTijden', function(req, res) {
-    res.render("home", {});
+    res.render("routeTijden", {});
 });
 
 app.get('/ticket', function(req, res) {
-    res.render("home", {});
+    res.render("ticket", {});
 });
 
 
-
-// de server starten op poort 3000
-app.listen(3000);
+// Listen port 4000
+console.log("port:4000");
+app.listen(4000)

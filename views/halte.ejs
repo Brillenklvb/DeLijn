@@ -1,7 +1,8 @@
-<% include header %>
+<% include header%>
 
-<section class="halte">
-
-</section>
-
-<% include footer %>
+<h1>Halte</h1>
+<form class="halte" method="get" action="/halte">
+  <input type="text" name="halte_id" value="" class="halte-input" required placeholder="HALTENUMMER">
+  <input type="submit" class="halte-submit" value="ZOEKEN">
+</form>
+<% include footer%>
